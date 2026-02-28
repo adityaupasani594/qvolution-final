@@ -1,0 +1,9 @@
+numpy
+pandas
+torch
+scikit-learn
+scipy
+matplotlib
+openpyxl
+perceval-quandela
+merlin-python
