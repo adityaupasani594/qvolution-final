@@ -23,6 +23,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+import os
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
@@ -219,6 +220,10 @@ for seed in ENSEMBLE_SEEDS:
         n_photons=N_PHOTONS,
         circuit_depth=CIRCUIT_DEPTH,
         seed=seed,
+        use_qpu=os.environ.get("QUANDELA_USE_QPU", "false").lower() in ("1", "true", "yes"),
+        qpu_token=os.environ.get("QUANDELA_TOKEN"),
+        qpu_backend=os.environ.get("QUANDELA_BACKEND", None),
+        qpu_n_samples=int(os.environ.get("QUANDELA_N_SAMPLES", 0)) or None,
     )
     res.fit_scaler(X_train)               # fit MinMax on training PCA data
     trq = res.transform(X_train)

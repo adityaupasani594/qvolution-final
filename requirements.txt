@@ -5,5 +5,7 @@ scikit-learn
 scipy
 matplotlib
 openpyxl
-perceval-quandela
-merlin-python
+perceval-quandela==1.1.0
+merlinquantum==0.3.1
+fastapi
+uvicorn
