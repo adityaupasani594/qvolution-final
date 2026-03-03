@@ -1,4 +1,4 @@
-# QVolution
+
 
 A quantum-powered volatility forecasting application combining a FastAPI backend with a React/Vite frontend. It uses a quantum reservoir computing model (via MerLin/Quandela) to predict implied volatility curves and option pricing via Black-Scholes.
 
@@ -182,3 +182,4 @@ Open two terminals and run the backend and frontend commands simultaneously:
 | Terminal 2 | `cd qvolution-frontend && npm run dev` |
 
 Then open `http://localhost:5173` in your browser.
+
