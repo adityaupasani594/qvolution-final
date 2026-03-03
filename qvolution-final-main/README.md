@@ -16,7 +16,7 @@ A quantum-powered volatility forecasting application combining a FastAPI backend
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/adityaupasani594/qvolution-final
 cd qvolution-final-main
 ```
 
@@ -182,4 +182,5 @@ Open two terminals and run the backend and frontend commands simultaneously:
 | Terminal 2 | `cd qvolution-frontend && npm run dev` |
 
 Then open `http://localhost:5173` in your browser.
+
 
